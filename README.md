@@ -23,7 +23,6 @@ BONUS 2:
 Organizzare i singoli membri in card/schede 
 -->
 
-
 DATI PER ESERCIZIO:
 
 Name            Role                    Image

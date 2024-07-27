@@ -65,6 +65,9 @@ const ourTeam = [
 
 ];
 
+// aggiungo il container
+const teamContainer = document.getElementById('myContainer')
+
 // creo il ciclo che mi legga il contenuto dell'array, in particolare gli oggetti ed il loro contenuto
 for (let i = 0; i < ourTeam.length; i++) {
     // stampo in pagina gli oggetti
@@ -74,4 +77,24 @@ for (let i = 0; i < ourTeam.length; i++) {
     console.log(ourTeam[i].name)
     console.log(ourTeam[i].role)
     console.log(ourTeam[i].image)
-}
+
+    // stampo in paginna la card
+    teamContainer.innerHTML += `
+        <div class="col mb-5 text-start">
+            <div class="card" style="width: 18rem;">
+
+                <img class="rounded-top" src="./img/${ourTeam[i].image}">
+
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">${ourTeam[i].name}</h5>
+                        <p class="card-text">I'm a nice and friendly person, like all the other members of the team.</p>
+                    </div>
+
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item fw-bold">${ourTeam[i].role}</li>
+                </ul>
+
+            </div>
+        </div>
+       `
+};

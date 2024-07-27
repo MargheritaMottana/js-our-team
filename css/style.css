@@ -1,7 +1,8 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    font-family: "Space Mono", monospace;
+}
 
-    font-family: sans-serif;
+#myContainer {
+    margin: 0 auto;
+    max-width: 1000px;
 }
