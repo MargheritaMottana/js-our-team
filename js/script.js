@@ -30,7 +30,7 @@ const ourTeam = [
     person1 = {
         name: 'Wayne Barnett',
         role: 'Founder & CEO',
-        pic: 'wayne-barnett-founder-ceo.jpg'
+        image: 'wayne-barnett-founder-ceo.jpg'
     },
 
     person2 = {
@@ -64,3 +64,14 @@ const ourTeam = [
     },
 
 ];
+
+// creo il ciclo che mi legga il contenuto dell'array, in particolare gli oggetti ed il loro contenuto
+for (let i = 0; i < ourTeam.length; i++) {
+    // stampo in pagina gli oggetti
+    console.log(ourTeam[i])
+
+    // stampo in pagina i singoli contenuti degli oggetti
+    console.log(ourTeam[i].name)
+    console.log(ourTeam[i].role)
+    console.log(ourTeam[i].image)
+}
